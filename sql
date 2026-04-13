@@ -67,7 +67,7 @@ CREATE TABLE avaliacoes (
 );
 
 -- Carregar Hoteis
-LOAD DATA INFILE 'C:/Users/faria.leonardo/Documents/analise_nara_hoteis/csv/hoteis.csv'
+LOAD DATA INFILE './csv/hoteis_tratado.csv'
 INTO TABLE hoteis
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
@@ -75,7 +75,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 -- Carregar Hospedes
-LOAD DATA INFILE 'C:/Users/faria.leonardo/Documents/analise_nara_hoteis/csv/hospedes.csv'
+LOAD DATA INFILE './csv/hospedes_tratado.csv'
 INTO TABLE hospedes
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
@@ -83,16 +83,15 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 -- Carregar Quartos
-LOAD DATA INFILE 'C:/Users/faria.leonardo/Documents/analise_nara_hoteis/csv/quartos.csv'
+LOAD DATA INFILE './csv/quartos_tratado.csv'
 INTO TABLE quartos
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
-IGNORE 1 ROWS
-(id_quarto, id_hotel, tipo_quarto, capacidade, @valor_base, andar, vista);
+IGNORE 1 ROWS; 
 
 -- Carregar Reservas
-LOAD DATA INFILE 'C:/Users/faria.leonardo/Documents/analise_nara_hoteis/csv/reservas.csv'
+LOAD DATA INFILE './csv/reservas_tratado.csv'
 INTO TABLE reservas
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
@@ -100,10 +99,9 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 -- Carregar Avaliacoes
-LOAD DATA INFILE 'C:/Users/faria.leonardo/Documents/analise_nara_hoteis/csv/avaliacoes.csv'
+LOAD DATA INFILE './csv/tratado/avaliacoes_tratado.csv'
 INTO TABLE avaliacoes
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
-IGNORE 1 ROWS
-(id_avaliacao, id_reserva, nota_geral, nota_limpeza, nota_atendimento, nota_custo_beneficio, comentario, data_avaliacao);
+IGNORE 1 ROWS;
