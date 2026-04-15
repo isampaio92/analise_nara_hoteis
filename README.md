@@ -6,7 +6,7 @@ Projeto tem como objetivo a tomada de decisão de negócio no ramo hoteleiro. Ve
 
 ## Tecnologias
 
-**Análise:** Python, Pandas, Matplotlib, Power BI
+**Análise:** Python, Pandas, NumPy, Matplotlib, Power BI
 
 **Banco de dados:** MySQL
 
